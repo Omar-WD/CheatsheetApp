@@ -17,3 +17,8 @@ h1 {
   margin-bottom: 50px;
 }
 
+.app-content {
+  display: flex;
+}
+
+

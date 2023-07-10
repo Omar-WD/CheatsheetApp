@@ -16,13 +16,15 @@ function App() {
   return (
     <div className="app-container">
     <Navbar />
-    <SideBar />
+    <div className="app-content">
+      <SideBar />
 
-    <Routes>
-      <Route  path="/" element={<CheatSheets />} />
-      <Route  path="/cheatsheets" element={<CheatSheets />} />
-      <Route  path="/github" element={<GitHub />} />
-    </Routes>
+      <Routes>
+        <Route  path="/" element={<CheatSheets />} />
+        <Route  path="/cheatsheets" element={<CheatSheets />} />
+        <Route  path="/github" element={<GitHub />} />
+      </Routes>
+    </div>
   </div>
   )
 }
