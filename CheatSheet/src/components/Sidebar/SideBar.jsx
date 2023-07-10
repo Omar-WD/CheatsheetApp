@@ -8,24 +8,20 @@ function SideBar() {
     <div className="sidebar">
       <ul>
         <NavLink to="/github" className="navLink">
-          <span className="sidebarItems">GitHub</span>
+          <span className="sidebarItems">Git/ GitHub</span>
         </NavLink>
-        <NavLink to="/VS-Code" className="navLink">
+        <NavLink to="/vscode" className="navLink">
           <span className="sidebarItems">VS-Code</span>
         </NavLink>
-        <NavLink to="/HTML" className="navLink">
+        <NavLink to="/html" className="navLink">
           <span className="sidebarItems">HTML</span>
         </NavLink>
-        <NavLink to="/CSS" className="navLink">
+        <NavLink to="/css" className="navLink">
           <span className="sidebarItems">CSS</span>
         </NavLink>
-        <NavLink to="/JavaScript" className="navLink">
+        <NavLink to="/javascript" className="navLink">
           <span className="sidebarItems">JavaScript</span>
         </NavLink>
-
-
-
-
 
         {/* <NavLink       
           to="/vscode" 

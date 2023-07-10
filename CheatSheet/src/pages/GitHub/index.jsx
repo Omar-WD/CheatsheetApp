@@ -6,25 +6,137 @@ import { IoDownloadOutline } from "react-icons/io5";
 import { IoIosShareAlt } from "react-icons/io";
 
 const markdown = `
-## basic commands
+## SETUP
+Configuring user information, initializing and cloning repositories
 
-merge the updated main (with footer merged into main by another colleague) pulled from Github to my local footer branch
+  \`\`\`
+  git config --global user.name “[firstname lastname]”
+  \`\`\`
+  set a name that is identifiable for credit when review version history
+  \`\`\`
+  git config --global user.email “[valid-email]”
+  \`\`\`
+  set an email address that will be associated with each history marker
+  \`\`\`
+  git config --global color.ui auto
+  \`\`\`
+ set automatic command line coloring for Git for easy reviewing
 
-\`\`\`
-git checkout main
-\`\`\`
+***
+## SETUP & INIT
+Configuring user information, initializing and cloning repositories
+  \`\`\`
+  git init
+  \`\`\`
+  initialize an existing directory as a Git repository
+  \`\`\`
+  git clone [url]
+  \`\`\`
+  retrieve an entire repository from a hosted location via URL
 
-**pull Github main branch (= current version) to my local main**
+***
+## STAGE & SNAPSHOT  
+Working with snapshots and the Git staging area
+  \`\`\`
+  git status
+  \`\`\`
+  show modified files in working directory, staged for your next commit
+  \`\`\`
+  git add [file]
+  \`\`\`
+  add a file as it looks now to your next commit (staging area)
+  \`\`\`
+  git add .
+  \`\`\`
+  add all modified files to the staging area
+  \`\`\`
+  git reset [file]
+  \`\`\`
+  unstage a file while retaining the changes in working directory
+  \`\`\`
+  git diff
+  \`\`\`
+  diff of what is changed but not staged
+  \`\`\`
+  git diff --staged
+  \`\`\`
+  diff of what is staged but not yet committed
+  \`\`\`
+  git commit -m “[descriptive message]”
+  \`\`\`
+  commit your staged content as a new commit snapshot
 
-\`\`\`
-git pull (origin main)
-\`\`\`
+***
+## BRANCH & MERGE
+Isolating work in branches, changing context, and integrating changes
 
-**do this if you want to change something on nav that your colleague worked on**
+  \`\`\`
+  git branch
+  \`\`\`
+  list your branches. a * will appear next to the currently active branch
+  \`\`\`
+  git branch [branch-name]
+  \`\`\`
+  create a new branch at the current commit
+  \`\`\`
+  git checkout -b [branch-name]
+  \`\`\`
+  create a new branch and check it out
+  \`\`\`
+  git merge [branch]
+  \`\`\`
+  merge the specified branch’s history into the current one
+  \`\`\`
+  git log
+  \`\`\`
+  show all commits in the current branch’s history
 
-\`\`\`
-git checkout nav
-\`\`\`
+*** 
+## INSPECT & COMPARE
+Examining logs, diffs and object information
+
+  \`\`\`
+  git log
+  \`\`\`
+  show the commit history for the currently active branch
+  \`\`\`
+  git log branchB..branchA
+  \`\`\`
+  show the commits on branchA that are not on branchB
+  \`\`\`
+  git diff branchB...branchA
+  \`\`\`
+  show the diff of what is in branchA that is not in branchB
+  \`\`\`
+  git log --follow [file]
+  \`\`\`
+  show the commits that changed file, even across renames
+
+
+***
+## SHARE & UPDATE
+Retrieving updates from another repository and updating local repos
+
+  \`\`\`
+  git remote add [alias] [url]
+  \`\`\`
+  add a git URL as an alias
+  \`\`\`
+  git fetch [alias]
+  \`\`\`
+  fetch down all the branches from that Git remote
+  \`\`\`
+  git merge [alias]/[branch]
+  \`\`\`
+  merge a remote branch into your current branch to bring it up to date
+  \`\`\`
+  git push [alias] [branch], e.g. git origin main
+  \`\`\`
+  Transmit local branch commits to the remote repository branch
+  \`\`\`
+  git pull
+  \`\`\`
+  fetch and merge any commits from the tracking remote branch
 `;
 
 const GitHub = () => {
@@ -33,7 +145,7 @@ const GitHub = () => {
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.target = '_blank';
-    link.download = 'git-cheat-sheet'; // Gib den Dateinamen für den Download an
+    link.download = 'cheat-sheet-git.pdf'; // Gib den Dateinamen für den Download an
   
     document.body.appendChild(link);
     link.click();
@@ -41,7 +153,7 @@ const GitHub = () => {
   }
 
   const handleDownload = () => {
-    const pdfUrl = "./git-cheat-sheet.pdf";
+    const pdfUrl = "./cheat-sheet-git.pdf";
     downloadPDF(pdfUrl);
   }
   

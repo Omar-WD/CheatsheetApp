@@ -1,6 +1,7 @@
 import React from 'react'
 import './CheatSheets.css'
 import Searchbar from '../../components/Searchbar'
+import NavCards from '../../components/NavCards/NavCards'
 
 const CheatSheets = () => {
   return (

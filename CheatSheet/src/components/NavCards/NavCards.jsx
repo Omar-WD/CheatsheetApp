@@ -11,6 +11,7 @@ function NavCards() {
       {title:'CSS',path:'/css'},
       {title:'JavaScript',path:'/javascript'},
     ]
+    
   return (
     <div className="cardsPage">
         {cards.map((card,index)=>(

@@ -10,8 +10,10 @@ import Navbar from './components/Navbar'
 import CheatSheets from './pages/CheatSheets'
 import GitHub from './pages/GitHub';
 import NavCards from "./components/NavCards/NavCards";
-
-
+import VSCode from "./pages/VSCode";
+import HTML from "./pages/HTML";
+import CSS from "./pages/CSS";
+import JavaScript from "./pages/JavaScript";
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
         <Route  path="/" element={<NavCards />} />
         <Route  path="/cheatsheets" element={<CheatSheets />} />
         <Route  path="/github" element={<GitHub />} />
+        <Route  path="/vscode" element={<VSCode />} />
+        <Route  path="/html" element={<HTML />} />
+        <Route  path="/css" element={<CSS />} />
+        <Route  path="/javascript" element={<JavaScript />} />
       </Routes>
     </div>
   </div>
