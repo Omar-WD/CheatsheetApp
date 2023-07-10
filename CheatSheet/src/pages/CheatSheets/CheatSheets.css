@@ -1,3 +1,7 @@
+.cheatsheet-container {
+  margin-left: 50px;
+}
+
 .cheatsheet-header {
   display: flex;
   justify-content: space-around;

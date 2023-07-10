@@ -1,5 +1,18 @@
 .searchbarContainer {
-    padding: 10px 20px;
-    width: 350px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    background-color: white;
+    padding: 10px;
     border-radius: 50px;
+}
+
+.searchbarContainer > * {
+    margin-left: 5px;
+}
+
+.searchbarContainer > input {
+    border: none;
+    outline: none;
+    font-size: 18px;
 }
