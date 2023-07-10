@@ -9,6 +9,10 @@ body {
   background: linear-gradient(90deg, #0a0a0a, #424242);
 }
 
+.app-content {
+  display: flex;
+}
+
 h1 {
   color: #eee;
   font-size: 36px;
@@ -17,8 +21,28 @@ h1 {
   margin-bottom: 50px;
 }
 
-.app-content {
-  display: flex;
+h2 {
+  color: #eee;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  color: #c3c3c3;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+code {
+  color: greenyellow;
+  background-color: #000000;
+  font-size: 18px;
+  padding: 15px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 

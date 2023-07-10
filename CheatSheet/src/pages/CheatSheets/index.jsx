@@ -7,7 +7,6 @@ const CheatSheets = () => {
     <div className="cheatsheet-container">
       <div className="cheatsheet-header">
         <h1>Cheatsheets</h1>
-        <Searchbar />
       </div>
     </div>
   )
