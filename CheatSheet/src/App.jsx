@@ -9,6 +9,7 @@ import SideBar from './components/Sidebar/SideBar'
 import Navbar from './components/Navbar'
 import CheatSheets from './pages/CheatSheets'
 import GitHub from './pages/GitHub';
+import NavCards from "./components/NavCards/NavCards";
 
 
 
@@ -18,9 +19,8 @@ function App() {
     <Navbar />
     <div className="app-content">
       <SideBar />
-
       <Routes>
-        <Route  path="/" element={<CheatSheets />} />
+        <Route  path="/" element={<NavCards />} />
         <Route  path="/cheatsheets" element={<CheatSheets />} />
         <Route  path="/github" element={<GitHub />} />
       </Routes>
