@@ -4,24 +4,23 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div class="navContainer">
-    <div class="headerItemContainer">
-      <div class="leftHeaderItems">
+    <div className="navContainer">
+    <div className="headerItemContainer">
+      <div className="leftHeaderItems">
         <img src="https://th.bing.com/th/id/OIP.iSzSE29bFxAhpMUwRrcPagHaHa?pid=ImgDet&rs=1" alt="logo" height={50}/>
       </div>
 
       <NavLink 
         to="/" 
-        exact 
         style={({ isActive }) => ({color: isActive ? "#fff" : "grey",})} 
       >
-        <i class="fas fa-border-all"></i>
+        <i className="fas fa-border-all"></i>
         <span>Cheatsheets</span>
       </NavLink>
     </div>
 
-    <div class="headerItemContainer">
-      <div class="profilImage">
+    <div className="headerItemContainer">
+      <div className="profilImage">
         <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" />
       </div>
     </div>

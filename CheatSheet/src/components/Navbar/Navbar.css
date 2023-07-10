@@ -35,8 +35,6 @@
   border-radius: 4px;
 }
 
-
-
 .leftHeaderItems span {
   margin-left: 5px;
   font-weight: 400;
@@ -45,8 +43,6 @@
 
 .leftHeaderItems:hover {
   /* background-color: #18181f; */
-  color: black;
-  background-color: white;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -56,5 +52,6 @@
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 5px;
   cursor: pointer;
 }
