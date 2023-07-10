@@ -9,6 +9,7 @@
     box-shadow: 0px 4px 15px 0px #101010;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .headerItemContainer

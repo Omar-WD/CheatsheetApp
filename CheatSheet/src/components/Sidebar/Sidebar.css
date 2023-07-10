@@ -1,7 +1,11 @@
 .sidebar{
     background-color: black;
-    width: 20%;
-    height: calc(100vh - 70px);
+    width: 250px;
+    height: 100vh;
+      position: sticky;
+      top: 0;
+      left: 0;
+      padding-top: 40px;
   }
   .sidebar a{
     color: #808080;
@@ -10,12 +14,9 @@
     width: 80%;
     display: block;
     padding: 20px 0;
-    
+ 
   }
-  
-  
-  
-
+    
   .sidebar ul{
     height: 500px;
     width: 100%;
@@ -25,9 +26,6 @@
     justify-content: space-around;
   }
   
- 
-  
-
 
 .sidebarItems {
   margin-left: 50px;

@@ -1,28 +1,31 @@
 .cardsPage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 50px;
+}
 
-    
-  }
-  .cardsPage a{
-    text-decoration: none;
-  }
+.card {
+  width: 20%;
+  margin-bottom: 20px;
+}
 
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 190px;
-    color: rgb(255, 255, 255);
-    background-color: gray;
-    margin: 30px;
-    text-align: center;
-    font-size: 24px;
-    border: solid transparent;
-    border-radius: 15px;
-  }
-  
+.cardsPage a{
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 190px;
+  color: rgb(255, 255, 255);
+  background-color: gray;
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
+  border: solid transparent;
+  border-radius: 15px;
+}
