@@ -4,17 +4,18 @@ import './App.css'
 import { Routes, Route, NavLink } from "react-router-dom";
 
 import Navbar from './components/Navbar'
-import Searchbar from './components/Searchbar'
 import CheatSheets from './pages/CheatSheets'
+import GitHub from './pages/GitHub';
 
 function App() {
   return (
     <div className="app-container">
     <Navbar />
-    <Searchbar />
 
     <Routes>
       <Route  path="/" element={<CheatSheets />} />
+      <Route  path="/cheatsheets" element={<CheatSheets />} />
+      <Route  path="/github" element={<GitHub />} />
     </Routes>
   </div>
   )
