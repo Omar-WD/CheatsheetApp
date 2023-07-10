@@ -1,16 +1,18 @@
+
+import React from "react"
 import { useState } from 'react'
 import './App.css'
-
 import { Routes, Route, NavLink } from "react-router-dom";
 
-import Navbar from './components/Navbar'
+import SideBar from './components/SideBar'
 import Searchbar from './components/Searchbar'
 import CheatSheets from './pages/CheatSheets'
+
 
 function App() {
   return (
     <div className="app-container">
-    <Navbar />
+    <SideBar />
     <Searchbar />
 
     <Routes>
