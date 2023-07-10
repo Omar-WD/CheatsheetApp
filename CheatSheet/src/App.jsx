@@ -1,15 +1,24 @@
+
 import React from "react"
+import { useState } from 'react'
 import './App.css'
-import SideBar from "./components/SideBar"
+import { Routes, Route, NavLink } from "react-router-dom";
+
+import SideBar from './components/SideBar'
+import Searchbar from './components/Searchbar'
+import CheatSheets from './pages/CheatSheets'
+
 
 function App() {
-  
-
   return (
-    <>
-      <SideBar/>
-        
-    </>
+    <div className="app-container">
+    <SideBar />
+    <Searchbar />
+
+    <Routes>
+      <Route  path="/" element={<CheatSheets />} />
+    </Routes>
+  </div>
   )
 }
 
