@@ -1,5 +1,6 @@
 import React from 'react'
 import './GitHub.css'
+import Searchbar from '../../components/Searchbar'
 
 const GitHub = () => {
   return (

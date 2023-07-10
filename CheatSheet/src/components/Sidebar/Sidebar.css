@@ -1,13 +1,13 @@
 .sidebar{
     background-color: black;
     width: 20%;
-    height: 935px;
+    height: calc(100vh - 70px);
   }
   .sidebar a{
     color: #808080;
     text-decoration: none;
     font-size: 24px;
-    width: 100%;
+    width: 80%;
     display: block;
     padding: 20px 0;
     
@@ -24,14 +24,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
   }
   
   .sidebar li{
-    
     width: 100%;
-    text-align: center;
-    }
+    margin-left: 50px;
+  }
   
-  .sidebar li:hover{
-  background-color: gray;}
+.sidebar li:hover{
+  color: #eee;
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebarItems {
+  margin-left: 50px;
+}
